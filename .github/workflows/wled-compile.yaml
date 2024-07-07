@@ -30,13 +30,11 @@ jobs:
         cd `cat /tmp/WLEDtemp/wledfoldername`
         npm install
         echo '[env:custom_build]' >>platformio.ini
-        echo 'extends = env:esp32dev' >>platformio.ini
-        echo 'build_flags = ${env:esp32dev.build_flags} -D USERMOD_DALLASTEMPERATURE -D USERMOD_DHT -D USERMOD_DHT_CELSIUS -D USERMOD_MULTI_RELAY -D USERMOD_PIRSWITCH -D USERMOD_PWM_FAN -D USERMOD_DALLASTEMPERATURE' >>platformio.ini
+        echo 'extends = env:esp32c3dev' >>platformio.ini
+        echo 'build_flags = ${env:esp32c3dev.build_flags} ${esp32.AR_build_flags} -D LEDPIN=18 -D USERMOD_MULTI_RELAY -DARDUINO_USB_CDC_ON_BOOT=0' >>platformio.ini
         echo 'lib_deps = ' >>platformio.ini
-        echo '  ${env:esp32dev.lib_deps}' >>platformio.ini
-        echo '  OneWire@~2.3.7' >>platformio.ini
-        echo '  https://github.com/alwynallan/DHT_nonblocking' >>platformio.ini
-        echo '  OneWire@~2.3.7' >>platformio.ini
+        echo '  ${env:esp32c3dev.lib_deps}' >>platformio.ini
+        echo '  ${esp32.AR_lib_deps}' >>platformio.ini
         
         echo 'build_unflags= -D WLED_RELEASE_NAME' >>platformio.ini
         pio run -e custom_build || pio run -e custom_build

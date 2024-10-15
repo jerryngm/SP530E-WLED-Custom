@@ -1,7 +1,8 @@
 WLED Build For SP530E
 
 Download custom_build.bin  
-Download ESPtool  
+Download ESPtool Here  
+Download C3_bootloader.bin and C3_partitions_4M.bin  
   
 Use this Command below.  
 

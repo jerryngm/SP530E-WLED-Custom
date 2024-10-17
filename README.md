@@ -1,6 +1,6 @@
 # WLED Build For SP530E  
 Prepare UART Converter  
-Download custom_build.bin  
+Download SP530E.bin  
 Download ESPtool [Here](https://github.com/espressif/esptool/releases)  
 Download C3_bootloader.bin and C3_partitions_4M.bin [Here](https://github.com/Aircoookie/WLED/releases/tag/v0.15.0-b2)  
   

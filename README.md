@@ -12,11 +12,13 @@ esptool.py read_flash 0 0x400000 sp530e-encrypted.bin
 ### Use this Command below to flash the custom firmware.  
 esptool.py write_flash --encrypt 0x0 C3_bootloader.bin 0x8000 C3_partitions_4M.bin 0x10000 custom_build.bin  
 
-## I/O Pins  
-Button GPIO 8  
-On Board Mic GPIO 3  
-LED DAT GPIO 19  
-### Analog Pins  
+## I/O Pins:  
+On Board Button GPIO 8  
+On Board Mic GPIO 3
+On Board Blue LED GPIO 0
+On Board Green LED GPIO 1
+LED DAT Output GPIO 19  
+### Analog Pins:  
 WW: 4  
 CW: 5  
 R: 10  

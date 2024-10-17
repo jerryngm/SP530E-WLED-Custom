@@ -15,12 +15,12 @@ esptool.py write_flash --encrypt 0x0 C3_bootloader.bin 0x8000 C3_partitions_4M.b
 ## I/O Pins:  
 On Board Button GPIO 8  
 On Board Mic GPIO 3
-On Board Blue LED GPIO 0
-On Board Green LED GPIO 1
+On Board Blue LED GPIO 0 (Inverted)  
+On Board Green LED GPIO 1 (Inverted)  
 LED DAT Output GPIO 19  
 ### Analog Pins:  
-WW: 4  
-CW: 5  
 R: 10  
-G: 6  
-B: 7  
+G: 7  
+B: 6  
+WW: 5  
+CW: 4 

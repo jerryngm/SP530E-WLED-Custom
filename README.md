@@ -1,3 +1,5 @@
+Update to 0.15.0  
+
 # WLED Build For SP530E  
 Prepare UART Converter  
 Download custom_build.bin  

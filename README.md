@@ -21,8 +21,8 @@ On Board Blue LED GPIO 0 (Inverted)
 On Board Green LED GPIO 1 (Inverted)  
 LED DAT Output GPIO 19  
 ### Analog Pins:  
-R: 10  
-G: 7  
-B: 6  
-WW: 5  
-CW: 4 
+R: GPIO 10  
+G: GPIO 7  
+B: GPIO 6  
+WW: GPIO 5  
+CW: GPIO 4 
